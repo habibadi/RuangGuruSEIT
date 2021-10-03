@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.8.11 on win32)" generated="20211003 19:45:14.158" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.1 (Python 3.8.11 on win32)" generated="20211003 20:33:06.101" rpa="false" schemaversion="2">
 <suite id="s1" name="SkillAcademySearch" source="C:\Users\habibastr\Documents\RuangGuru\SkillAcademy\Tests\API\SkillAcademySearch.robot">
 <test id="s1-t1" name="Test Search API">
 <kw name="Check Basic Search" library="TestSearch">
@@ -8,8 +8,8 @@
 <arg>https://skillacademy.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20211003 19:45:15.159" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20211003 19:45:15.159" endtime="20211003 19:45:15.159"/>
+<msg timestamp="20211003 20:33:06.929" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20211003 20:33:06.929" endtime="20211003 20:33:06.929"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -17,59 +17,59 @@
 <arg>/skillacademy/discovery/search?searchQuery=${serachitem}</arg>
 <doc>Send a GET request on the session object found using the
 given `alias`</doc>
-<msg timestamp="20211003 19:45:15.753" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis 
+<msg timestamp="20211003 20:33:07.367" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis 
  path_url=/skillacademy/discovery/search?searchQuery=bisnis 
  headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20211003 19:45:15.753" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis 
+<msg timestamp="20211003 20:33:07.367" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis 
  status=200, reason=OK 
- body={"data":{"data":[{"basePrice":1700000,"categories":[],"courseDescription":"Jadwal Pelatihan: \u003cbr\u003e 1. Anda akan mendapatkan pelatihan melalui Aplikasi Neo yang bisa di akses 24 jam selama 3 Bulan \u003cbr\u003e 2. Anda akan mendapatkan pertemuan online dengan coach 2x/minggu dengan durasi 60 menit (Anda bisa memilih \u0026 menetukan jadwal coaching sendiri yang akan di informasikan setelah pendaftaran) \u003cbr\u003e Pelatihan English for Business memiliki 6 bagian yang dapat mengembangkan kemampuan mendengar, lancar berbicara dan kemampuan presentasi. Pelatihan ini berfokus di tema utama yang umum di dunia bisnis termasuk karyawan, sejarang perusahaan, deskripsi pekerjaan, tanggung jawab, perbandingan produk, membuat keputusan dan perencanaan. Pelatihan ini fokus kepada konsep bahasa, tata bahasa, dn kosa kata yang dibutuhkan untuk berkomunikasi di dalam banyak situasi bisnis. Inti dari program akan mengajarkan untuk bertanya dan menjawab untuk mendapatkan informasi, presentasi oral, dan wawancara. Idealnya, kemampuan ini dapat dikembangkan di dalam aktivitas kelas. Pelatihan  ini cocok bagi peserta yang ingin menguasai bahasa Inggris untuk keperluan bisnis. \u003cbr\u003e Dapatkan Sertifikat Bahasa Inggris Lokal \u0026 International, yang dapat di unduh setelah menyelesaikan pelatihan\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e Yuk bergabung di kelas ini! Catat ya.... program ini didukung oleh Prince English Solution yang sudah berdiri lebih dari 11 tahun. Jadi, jangan lewatkan!\u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut: https://bit.ly/KelasPrinceEnglishSolution   \u003cbr\u003e 3.Tim Prince English Solution akan menghubungi Anda untuk pelaksanaan kelas","courseName":"Kursus Inggris Bisnis / English for Business","courseSerial":"PROG-L6JK082W","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Background_(1).jpg","instructors":[{"description":"Prince English Solution di bawah PT Internasional Media Edukasi Indonesia merupakan lembaga pendidikan yang mendedikasikan diri dalam bidang pendidikan dan pelatihan Bahasa Inggris telah berdiri sejak tahun 2009 saat ini Prince memiliki 2000 existing students dari seluruh Indonesia ,kami mempunyai metode pengajaran dengan tehnologi terkini yaitu: \u003cbr\u003e\u003cbr\u003e 1. Courseware, berisi tentang pelajaran Bahasa Inggris interaktif dengan metode blended learning berupa video interaktif yang bisa di unduh di playstore dan Google play. \u003cbr\u003e 2. Record manager, kami memantau seluruh aktifitas dan perkembanagan siswa melalui akses record manager semua aktifitas dan hasil belajar siswa /study recors tersimpan. \u003cbr\u003e 3. Modul,  modul tertulis di sediakan dalam website Prince English Solution yaitu berupa pelajaran grammar,writing ,reading dan quiz. \u003cbr\u003e 4. Sertifikat, kami menggunakan pengujian berdasarkan level CEFR sehingga sertifikat kami meruapakan sertifikat Internasional ,CEFR. \u003cbr\u003e 5. Customer Service, memberikan pelayanan terbaik merupakan bisnis kami ,kami melayani setiap kendala yang di hadapi setiap peserta kursus.","jobTitle":"Smart English Learning","name":"Prince English Solution","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/merchant_logo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-UNWH79RR","price":1700000,"rating":0,"slug":"kursus-inggris-bisnis-english-for-business","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":300000,"categories":[],"courseDescription":"Jadwal kelas: \u003cbr\u003e Kelas online diadakan dalam 2x pertemuan, setiap hari Kamis dan Jumat minggu pertama tiap bulan. Peserta wajib mengikuti 2x pertemuan. \u003cbr\u003e Jadwal hari Kamis jam 09.00-13.00 WIB dan hari Jumat jam 09.00-11.00 WIB \u003cbr\u003e Info lebih lanjut dapat menghubungi 0812-1940-6474 (WhatsApp) \u003cbr\u003e \u003cbr\u003e Salah satu kunci sukses dalam bisnis adalah memiliki model bisnis yang kreatif dan inovatif. Pada kelas ini, peserta akan mempelajari Model Bisnis Canvas, sebuah metode yang sudah banyak dipraktekkan dan menghasilkan bisnis-bisnis sukses. Peserta dapat mempelajari dan menerapkan Model Bisnis Kanvas dengan mudah dan akurat dalam mempersiapkan dan membangun bisnis mereka.  Kelas ini ditujukan kepada peserta yang ingin memulai membangun usaha. \u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama \u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut:  http://bit.ly/KelasInsightOut  \u003cbr\u003e 3.Tim Insight Out akan menghubungi Anda untuk pelaksanaan kelas","courseName":"Webinar: Strategi Merancang Model Bisnis Dari Nol","courseSerial":"PROG-Z6M51NR4","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Model_Bisnis_Background_Image.jpeg","instructors":[{"description":"Insight Out adalah sebuah perusahaan pengembangan diri yang berfokus pada 3 tema utama, passion, purpose, dan culture. Insight Out memiliki misi memenuhi kebutuhan belajar dengan membuat program online dan offline. Dengan ini Insight Out menghadirkan program yang dibutuhkan bagi pelaku bisnis saat ini, mulai dari bagaimana membangun bisnis dari nol hingga menjadi mentor yang handal bagi perusahaan.","jobTitle":"Career, Business Development, Strategy","name":"Insight Out","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Merchant_Logo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA UTARA"],"marketType":"OFFLINE","merchantSerial":"MERC-5MHV4C2A","price":300000,"rating":0,"slug":"webinar-strategi-merancang-model-bisnis-dari-nol","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":100000,"categories":[],"courseDescription":"Jadwal: 8 Juli  2020\u003cbr\u003ePukul: 13.00-14.00 WIB\u003cbr\u003eUntuk sukses di dunia bisnis dan pekerjaan, kamu harus bisa gaul. Ya, karena manusia adalah makhluk sosial. Untuk meraih kesuksesan, kamu dituntut untuk selalu siap bersosialisasi dengan orang lain, karena sukses memang tidak bisa diraih sendirian.  Namun banyak orang yang sering gagal dalam melakukan komunikasi. Akibatnya, hasil yang didapatkan tidak sebagaimana yang diharapkan. Untuk itu kamu perlu memahami masalah-masalah dalam komunikasi  dan cara menghadapinya.  Di kelas ini, kamu juga akan diajak untuk mengenali beragam gaya komunikasi yang berbeda. Ternyata, belajar komunikasi itu asyik sekaligus bermanfaat lho! Yuk bergabung di kelas ini! Catat ya….  program ini didukung oleh MarkPlus, konsultan pemasaran pertama di Indonesia dengan pengalaman 30 tahun. Jangan lewatkan!\u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli menggunakan Kartu Prakerja tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e4. Khusus untuk pengguna Kartu Prakerja, pastikan nama, alamat email, dan nomor HP yang terdaftar di Skill Academy sesuai dengan data Prakerja kamu\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003eSetelah melakukan transaksi, wajib daftarkan diri Anda pada link berikut: bit.ly/markplusinstitutexsa","courseName":"Webinar:Teknik Berkomunikasi Efektif dalam Bisnis","courseSerial":"PROG-ZOCCPG3Y","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Background_MarkPlus.jpg","instructors":[{"description":"MarkPlus Institute adalah pionir dari institusi pelatihan keahlian profesional dan industrial sejak Mei 1990. Kami menyajikan metode belajar “Omni” dengan racikan personifikasi, kontekstual, interaktif dan terukur yang seimbang. MarkPlus Institute meningkatkan kompetensi sumber daya manusia Indonesia dengan membawa pengetahuan pemasaran global yang dikemas dalam sesi pelatihan yang berkelas. MarkPlus Institute menyediakan jalan bagi para klien untuk melengkapi keahlian dan keunggulan kompetitif di tahap pendidikan, profesional, dan entrepeneur yang dikemas lengkap dalam tiga topik utama pelatihan: pemasaran, k... (set the log level to DEBUG or TRACE to see the full content) 
+ body={"data":{"data":[{"basePrice":300000,"categories":[],"courseDescription":"Jadwal kelas: \u003cbr\u003e Kelas online diadakan dalam 2x pertemuan, setiap hari Kamis dan Jumat minggu pertama tiap bulan. Peserta wajib mengikuti 2x pertemuan. \u003cbr\u003e Jadwal hari Kamis jam 09.00-13.00 WIB dan hari Jumat jam 09.00-11.00 WIB \u003cbr\u003e Info lebih lanjut dapat menghubungi 0812-1940-6474 (WhatsApp) \u003cbr\u003e \u003cbr\u003e Salah satu kunci sukses dalam bisnis adalah memiliki model bisnis yang kreatif dan inovatif. Pada kelas ini, peserta akan mempelajari Model Bisnis Canvas, sebuah metode yang sudah banyak dipraktekkan dan menghasilkan bisnis-bisnis sukses. Peserta dapat mempelajari dan menerapkan Model Bisnis Kanvas dengan mudah dan akurat dalam mempersiapkan dan membangun bisnis mereka.  Kelas ini ditujukan kepada peserta yang ingin memulai membangun usaha. \u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama \u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut:  http://bit.ly/KelasInsightOut  \u003cbr\u003e 3.Tim Insight Out akan menghubungi Anda untuk pelaksanaan kelas","courseName":"Webinar: Strategi Merancang Model Bisnis Dari Nol","courseSerial":"PROG-Z6M51NR4","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Model_Bisnis_Background_Image.jpeg","instructors":[{"description":"Insight Out adalah sebuah perusahaan pengembangan diri yang berfokus pada 3 tema utama, passion, purpose, dan culture. Insight Out memiliki misi memenuhi kebutuhan belajar dengan membuat program online dan offline. Dengan ini Insight Out menghadirkan program yang dibutuhkan bagi pelaku bisnis saat ini, mulai dari bagaimana membangun bisnis dari nol hingga menjadi mentor yang handal bagi perusahaan.","jobTitle":"Career, Business Development, Strategy","name":"Insight Out","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Merchant_Logo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA UTARA"],"marketType":"OFFLINE","merchantSerial":"MERC-5MHV4C2A","price":300000,"rating":0,"slug":"webinar-strategi-merancang-model-bisnis-dari-nol","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":1700000,"categories":[],"courseDescription":"Jadwal Pelatihan: \u003cbr\u003e 1. Anda akan mendapatkan pelatihan melalui Aplikasi Neo yang bisa di akses 24 jam selama 3 Bulan \u003cbr\u003e 2. Anda akan mendapatkan pertemuan online dengan coach 2x/minggu dengan durasi 60 menit (Anda bisa memilih \u0026 menetukan jadwal coaching sendiri yang akan di informasikan setelah pendaftaran) \u003cbr\u003e Pelatihan English for Business memiliki 6 bagian yang dapat mengembangkan kemampuan mendengar, lancar berbicara dan kemampuan presentasi. Pelatihan ini berfokus di tema utama yang umum di dunia bisnis termasuk karyawan, sejarang perusahaan, deskripsi pekerjaan, tanggung jawab, perbandingan produk, membuat keputusan dan perencanaan. Pelatihan ini fokus kepada konsep bahasa, tata bahasa, dn kosa kata yang dibutuhkan untuk berkomunikasi di dalam banyak situasi bisnis. Inti dari program akan mengajarkan untuk bertanya dan menjawab untuk mendapatkan informasi, presentasi oral, dan wawancara. Idealnya, kemampuan ini dapat dikembangkan di dalam aktivitas kelas. Pelatihan  ini cocok bagi peserta yang ingin menguasai bahasa Inggris untuk keperluan bisnis. \u003cbr\u003e Dapatkan Sertifikat Bahasa Inggris Lokal \u0026 International, yang dapat di unduh setelah menyelesaikan pelatihan\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e Yuk bergabung di kelas ini! Catat ya.... program ini didukung oleh Prince English Solution yang sudah berdiri lebih dari 11 tahun. Jadi, jangan lewatkan!\u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut: https://bit.ly/KelasPrinceEnglishSolution   \u003cbr\u003e 3.Tim Prince English Solution akan menghubungi Anda untuk pelaksanaan kelas","courseName":"Kursus Inggris Bisnis / English for Business","courseSerial":"PROG-L6JK082W","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Background_(1).jpg","instructors":[{"description":"Prince English Solution di bawah PT Internasional Media Edukasi Indonesia merupakan lembaga pendidikan yang mendedikasikan diri dalam bidang pendidikan dan pelatihan Bahasa Inggris telah berdiri sejak tahun 2009 saat ini Prince memiliki 2000 existing students dari seluruh Indonesia ,kami mempunyai metode pengajaran dengan tehnologi terkini yaitu: \u003cbr\u003e\u003cbr\u003e 1. Courseware, berisi tentang pelajaran Bahasa Inggris interaktif dengan metode blended learning berupa video interaktif yang bisa di unduh di playstore dan Google play. \u003cbr\u003e 2. Record manager, kami memantau seluruh aktifitas dan perkembanagan siswa melalui akses record manager semua aktifitas dan hasil belajar siswa /study recors tersimpan. \u003cbr\u003e 3. Modul,  modul tertulis di sediakan dalam website Prince English Solution yaitu berupa pelajaran grammar,writing ,reading dan quiz. \u003cbr\u003e 4. Sertifikat, kami menggunakan pengujian berdasarkan level CEFR sehingga sertifikat kami meruapakan sertifikat Internasional ,CEFR. \u003cbr\u003e 5. Customer Service, memberikan pelayanan terbaik merupakan bisnis kami ,kami melayani setiap kendala yang di hadapi setiap peserta kursus.","jobTitle":"Smart English Learning","name":"Prince English Solution","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/merchant_logo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-UNWH79RR","price":1700000,"rating":0,"slug":"kursus-inggris-bisnis-english-for-business","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":100000,"categories":[],"courseDescription":"Jadwal: 8 Juli  2020\u003cbr\u003ePukul: 13.00-14.00 WIB\u003cbr\u003eUntuk sukses di dunia bisnis dan pekerjaan, kamu harus bisa gaul. Ya, karena manusia adalah makhluk sosial. Untuk meraih kesuksesan, kamu dituntut untuk selalu siap bersosialisasi dengan orang lain, karena sukses memang tidak bisa diraih sendirian.  Namun banyak orang yang sering gagal dalam melakukan komunikasi. Akibatnya, hasil yang didapatkan tidak sebagaimana yang diharapkan. Untuk itu kamu perlu memahami masalah-masalah dalam komunikasi  dan cara menghadapinya.  Di kelas ini, kamu juga akan diajak untuk mengenali beragam gaya komunikasi yang berbeda. Ternyata, belajar komunikasi itu asyik sekaligus bermanfaat lho! Yuk bergabung di kelas ini! Catat ya….  program ini didukung oleh MarkPlus, konsultan pemasaran pertama di Indonesia dengan pengalaman 30 tahun. Jangan lewatkan!\u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli menggunakan Kartu Prakerja tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e4. Khusus untuk pengguna Kartu Prakerja, pastikan nama, alamat email, dan nomor HP yang terdaftar di Skill Academy sesuai dengan data Prakerja kamu\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003eSetelah melakukan transaksi, wajib daftarkan diri Anda pada link berikut: bit.ly/markplusinstitutexsa","courseName":"Webinar:Teknik Berkomunikasi Efektif dalam Bisnis","courseSerial":"PROG-ZOCCPG3Y","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Background_MarkPlus.jpg","instructors":[{"description":"MarkPlus Institute adalah pionir dari institusi pelatihan keahlian profesional dan industrial sejak Mei 1990. Kami menyajikan metode belajar “Omni” dengan racikan personifikasi, kontekstual, interaktif dan terukur yang seimbang. MarkPlus Institute meningkatkan kompetensi sumber daya manusia Indonesia dengan membawa pengetahuan pemasaran global yang dikemas dalam sesi pelatihan yang berkelas. MarkPlus Institute menyediakan jalan bagi para klien untuk melengkapi keahlian dan keunggulan kompetitif di tahap pendidikan, profesional, dan entrepeneur yang dikemas lengkap dalam tiga topik utama pelatihan: pemasaran, k... (set the log level to DEBUG or TRACE to see the full content) 
  </msg>
-<msg timestamp="20211003 19:45:15.753" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:15.159" endtime="20211003 19:45:15.753"/>
+<msg timestamp="20211003 20:33:07.367" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211003 20:33:06.929" endtime="20211003 20:33:07.367"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:15.753" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20211003 19:45:15.753" endtime="20211003 19:45:15.753"/>
+<msg timestamp="20211003 20:33:07.367" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20211003 20:33:07.367" endtime="20211003 20:33:07.367"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:15.753" endtime="20211003 19:45:15.768"/>
+<status status="PASS" starttime="20211003 20:33:07.367" endtime="20211003 20:33:07.367"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:15.784" level="INFO">${body} = {"data":{"data":[{"basePrice":1700000,"categories":[],"courseDescription":"Jadwal Pelatihan: \u003cbr\u003e 1. Anda akan mendapatkan pelatihan melalui Aplikasi Neo yang bisa di akses 24 jam selama 3 B...</msg>
-<status status="PASS" starttime="20211003 19:45:15.768" endtime="20211003 19:45:15.784"/>
+<msg timestamp="20211003 20:33:07.382" level="INFO">${body} = {"data":{"data":[{"basePrice":300000,"categories":[],"courseDescription":"Jadwal kelas: \u003cbr\u003e Kelas online diadakan dalam 2x pertemuan, setiap hari Kamis dan Jumat minggu pertama tiap bulan. ...</msg>
+<status status="PASS" starttime="20211003 20:33:07.367" endtime="20211003 20:33:07.382"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${body}</arg>
 <arg>${serachitem}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211003 19:45:15.784" endtime="20211003 19:45:15.784"/>
+<status status="PASS" starttime="20211003 20:33:07.382" endtime="20211003 20:33:07.382"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20211003 19:45:15.784" level="INFO">${contentTypeValue} = application/json</msg>
-<status status="PASS" starttime="20211003 19:45:15.784" endtime="20211003 19:45:15.784"/>
+<msg timestamp="20211003 20:33:07.382" level="INFO">${contentTypeValue} = application/json</msg>
+<status status="PASS" starttime="20211003 20:33:07.382" endtime="20211003 20:33:07.382"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:15.784" endtime="20211003 19:45:15.784"/>
+<status status="PASS" starttime="20211003 20:33:07.382" endtime="20211003 20:33:07.382"/>
 </kw>
-<status status="PASS" starttime="20211003 19:45:15.159" endtime="20211003 19:45:15.784"/>
+<status status="PASS" starttime="20211003 20:33:06.929" endtime="20211003 20:33:07.382"/>
 </kw>
 <kw name="Check Pagination Search" library="TestSearch">
 <kw name="Create Session" library="RequestsLibrary">
@@ -77,8 +77,8 @@ given `alias`</doc>
 <arg>https://skillacademy.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20211003 19:45:15.784" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20211003 19:45:15.784" endtime="20211003 19:45:15.784"/>
+<msg timestamp="20211003 20:33:07.382" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20211003 20:33:07.382" endtime="20211003 20:33:07.382"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -86,96 +86,96 @@ given `alias`</doc>
 <arg>/skillacademy/discovery/search?searchQuery=${serachitem}&amp;page=${page}&amp;pageSize=${pageSize}</arg>
 <doc>Send a GET request on the session object found using the
 given `alias`</doc>
-<msg timestamp="20211003 19:45:15.940" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2 
+<msg timestamp="20211003 20:33:07.914" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2 
  path_url=/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2 
  headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20211003 19:45:15.940" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2 
+<msg timestamp="20211003 20:33:07.914" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2 
  status=200, reason=OK 
  body={"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas terdiri dari 2 sesi\u003cbr\u003eSesi 1: Setiap Hari Rabu\u003cbr\u003ePukul: 13.00 - 16.00 WIB\u003cbr\u003eSesi 2: Setiap Hari Jumat\u003cbr\u003ePukul: 13.00 - 15.00 WIB\u003cbr\u003e Platform: Zoom\u003cbr\u003eSaat ini Lebih dari 80% pengguna internet di Indonesia menggunakan kedua social media ini dalam menggunakan internet sehari-hari. Bagaimana cara nya untuk melakukan pemasaran yang efektif di kedua platform tersebut? Bagaimana memanfaatkan Facebook dan Instagram secara efektif sesuai kebutuhan anda? Apa saja yang perlu dipersiapkan untuk melakukan pemasaran digital di kedua social media tersebut? Kami bersama anda akan membahas tuntas tentang semua yang diperlukan untuk sukses di Facebook dan Instagram, baik untuk kebutuhan bisnis maupun karir anda. Tunggu apa lagi? Daftar sekarang bersama kami!\u003cbr\u003e\u003cbr\u003e \u003cb\u003e PERHATIAN \u003c/b\u003e \u003cbr\u003e 1. Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun \u003cbr\u003e 2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan \u003cbr\u003e 3. Program pelatihan yang dibeli menggunakan Kartu Prakerja tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat \u003cbr\u003e 4. Khusus untuk pengguna Kartu Prakerja, pastikan nama, alamat email, dan nomor HP yang terdaftar di Skill Academy sesuai dengan data Prakerja Anda. \u003cbr\u003e\u003cbr\u003e \u003cb\u003eCara Redeem Voucher:\u003c/b\u003e \u003cbr\u003e 1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher kamu. \u003cbr\u003e 2. Lalu setelah itu, daftarkan diri kamu dan masukkan kode voucher di https://bit.ly/andaftalent \u003cbr\u003e 2. Tim Andaf Talent akan menghubungi kamu untuk pelaksanaan kelas.","courseName":"Webinar: Cara Beriklan Bisnis Menggunakan Facebook dan Instagram","courseSerial":"PROG-MDK98QX1","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Andaf_Talent_Background.jpg","instructors":[{"description":"Andaf Talent adalah lembaga pendidikan yang berkomitmen dalam menyediakan berbagai layanan pelatihan dibidang marketing, digital marketing dan human management. Komitmen kami dalam melahirkan entrepreuner baru dan tenaga kerja yang kompetitif dan secara konsisten mampu bersaing di era digital memacu kami untuk terus bertumbuh menjadi yang terbaik.","jobTitle":"Digital Marketing Training","name":"Andaf Talent","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Andaf_Talent_Icon.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA BEKASI"],"marketType":"OFFLINE","merchantSerial":"MERC-HJT5ICQV","price":250000,"rating":0,"slug":"webinar-cara-beriklan-bisnis-menggunakan-facebook-dan-instagram","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":249000,"categories":[],"courseDescription":"Jadwal: Hari Selasa, Rabu, Kamis, Jumat, Sabtu dan Minggu\u003cbr\u003ePukul: 19.30-21.00 WIB\u003cbr\u003ePlatform : Zoom\u003cbr\u003e Di dalam kelas ini, Anda akan mendapatkan materi seputar: \u003cbr\u003e 1.Teknik membangun tim distribusi.\u003cbr\u003e2.Cara bekerjasama dengan Ritel Modern.\u003cbr\u003e3.Cara bekerjasama dengan Ritel Semi Modern.\u003cbr\u003e4.Cara bekerjasama dengan Ritel Semi Tradisional.\u003cbr\u003e5.Cara bekerjasama dengan Ritel Tradisional. \u003cbr\u003e\u003cbr\u003e Yuk bergabung di kelas ini! Catat ya…. program ini didukung oleh Wonderful Packaging Class. Jadi, jangan lewatkan! \u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut: https://bit.ly/KelasWPC  \u003cbr\u003e 3.Tim Wonderful Packaging Class akan menghubungi Anda untuk pelaksanaan kelas","courseName":"Webinar: Strategi Pemasaran Bisnis Snack","courseSerial":"PROG-TK6SZMFG","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Background_Bisnis_Snack.jpg","instructors":[{"description":"Kelas bisnis yang mengajarkan bagaimana cara memulai usaha dengan modal minim dengan hasil maksimal. Bahan Materi Menentukan Produk, Kemasan hingga Pemasaran.","jobTitle":"Praktisi dan Konsultan","name":"Wonderful Packaging Class","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Icon_WPC.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-GBYQCZMF","price":249000,"rating":0,"slug":"webinar-strategi-pemasaran-bisnis-snack","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"}],"page":4,"pageSize":2,"recommendationID":"v0","searchAlgoID":"v3","totalCourse":35,"totalPage":18},"status":"success","message":"success"} 
  </msg>
-<msg timestamp="20211003 19:45:15.940" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:15.784" endtime="20211003 19:45:15.940"/>
+<msg timestamp="20211003 20:33:07.914" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211003 20:33:07.382" endtime="20211003 20:33:07.914"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:15.940" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<msg timestamp="20211003 20:33:07.914" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20211003 20:33:07.914" endtime="20211003 20:33:07.914"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<status status="PASS" starttime="20211003 20:33:07.914" endtime="20211003 20:33:07.914"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:15.940" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas terdiri dari 2 sesi\u003cbr\u003eSesi 1: Setiap Hari Rabu\u003cbr\u003ePukul: 13.00 - 16.00 WIB\u003cbr\u003eSesi...</msg>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<msg timestamp="20211003 20:33:07.929" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas terdiri dari 2 sesi\u003cbr\u003eSesi 1: Setiap Hari Rabu\u003cbr\u003ePukul: 13.00 - 16.00 WIB\u003cbr\u003eSesi...</msg>
+<status status="PASS" starttime="20211003 20:33:07.914" endtime="20211003 20:33:07.929"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${body}</arg>
 <arg>${serachitem}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<status status="PASS" starttime="20211003 20:33:07.929" endtime="20211003 20:33:07.929"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20211003 19:45:15.940" level="INFO">${contentTypeValue} = application/json</msg>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<msg timestamp="20211003 20:33:07.929" level="INFO">${contentTypeValue} = application/json</msg>
+<status status="PASS" starttime="20211003 20:33:07.929" endtime="20211003 20:33:07.929"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<status status="PASS" starttime="20211003 20:33:07.929" endtime="20211003 20:33:07.929"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${json}</var>
 <arg>${response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211003 19:45:15.940" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas terdiri dari 2 sesi&lt;br&gt;Sesi 1: Setiap Hari Rabu&lt;br&gt;Pukul: 13.00 - 16.00 WIB&lt;br&gt;Sesi 2: Setiap Hari Jumat&lt;b...</msg>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<msg timestamp="20211003 20:33:07.945" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas terdiri dari 2 sesi&lt;br&gt;Sesi 1: Setiap Hari Rabu&lt;br&gt;Pukul: 13.00 - 16.00 WIB&lt;br&gt;Sesi 2: Setiap Hari Jumat&lt;b...</msg>
+<status status="PASS" starttime="20211003 20:33:07.929" endtime="20211003 20:33:07.945"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['page']}</arg>
 <arg>${page}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:15.940" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:07.945" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:15.940" endtime="20211003 19:45:15.940"/>
+<status status="PASS" starttime="20211003 20:33:07.945" endtime="20211003 20:33:07.945"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['pageSize']}</arg>
 <arg>${pageSize}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:15.956" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:07.961" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:15.956" endtime="20211003 19:45:15.956"/>
+<status status="PASS" starttime="20211003 20:33:07.945" endtime="20211003 20:33:07.961"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['status']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:15.956" endtime="20211003 19:45:15.956"/>
+<status status="PASS" starttime="20211003 20:33:07.961" endtime="20211003 20:33:07.961"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['message']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:15.956" endtime="20211003 19:45:15.956"/>
+<status status="PASS" starttime="20211003 20:33:07.961" endtime="20211003 20:33:07.961"/>
 </kw>
-<status status="PASS" starttime="20211003 19:45:15.784" endtime="20211003 19:45:15.956"/>
+<status status="PASS" starttime="20211003 20:33:07.382" endtime="20211003 20:33:07.961"/>
 </kw>
 <kw name="Check Price Search" library="TestSearch">
 <kw name="Create Session" library="RequestsLibrary">
@@ -183,8 +183,8 @@ given `alias`</doc>
 <arg>https://skillacademy.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20211003 19:45:15.956" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20211003 19:45:15.956" endtime="20211003 19:45:15.956"/>
+<msg timestamp="20211003 20:33:07.961" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20211003 20:33:07.961" endtime="20211003 20:33:07.961"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -192,122 +192,122 @@ given `alias`</doc>
 <arg>/skillacademy/discovery/search?searchQuery=${serachitem}&amp;page=${page}&amp;pageSize=${pageSize}&amp;minPrice=${minPrice}&amp;maxPrice=${maxPrice}</arg>
 <doc>Send a GET request on the session object found using the
 given `alias`</doc>
-<msg timestamp="20211003 19:45:16.362" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000 
+<msg timestamp="20211003 20:33:08.398" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000 
  path_url=/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000 
  headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20211003 19:45:16.362" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000 
+<msg timestamp="20211003 20:33:08.398" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000 
  status=200, reason=OK 
  body={"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan YouTube marketing untuk memasarkan dan mengiklankan usaha produk. Hanya dengan menggunakan handphone, pelaku usaha dapat mengetahui cara meningkatkan jangkauan iklan produknya dengan mengenali strategi-strategi marketing yang tepat melalui YouTube. \n\u003cbr\u003e \u003cbr\u003e\n\u003cb\u003e PERHATIAN \u003c/b\u003e\n\u003cbr\u003e\n1. Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun \u003cbr\u003e\n2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan \u003cbr\u003e\n3. Program pelatihan yang dibeli menggunakan Kartu Prakerja tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat \u003cbr\u003e\n4. Khusus untuk pengguna Kartu Prakerja, pastikan nama, alamat email, dan nomor HP yang terdaftar di Skill Academy sesuai dengan data Prakerjamu","courseName":"Video Pelatihan: Mencari Peluang Bisnis Jualan Lewat HP Menggunakan YouTube Marketing","courseSerial":"PROG-4IF38HH5","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod-image.skillacademy.com/offline-marketplace/Background+Papindo.jpg","instructors":[{"description":"Papindo Education Center merupakan lembaga keterampilan yang bergerak di bidang IT, yang menyediakan kursus keterampilan komputer perkantoran, design grafis, dan teknisi komputer.","jobTitle":"Pelatihan Teknologi","name":"Papindo Education Center","profilePicture":"https://skillacademy-prod-image.skillacademy.com/offline-marketplace/Icon+Papindo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-OX2N4LCX","price":250000,"rating":0,"slug":"webinar-mencari-peluang-bisnis-jualan-lewat-hp-menggunakan-youtube-marketing","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":200000,"categories":[],"courseDescription":"Hii learners, mau sukses bisnis online dan mendapatkan omzet jutaan rupiah hanya dengan HP anda?Facebook dan instagram merupakan salah satu platform advertising terbesar di dunia saat ini selain GOOGLE.\u003cbr\u003eNah di kelas ini kita akan membahas bagaimana memaksimalkan facebook dan instagram untuk menjangkau customer lebih banyak lagi sehingga menghasilkan omzet yang luar biasa besar bagi bisnis anda. Sekarang saatnya untuk anda memulai bisnis dari Instagram.\u003cbr\u003e\u003cbr\u003e Setelah mengikuti pelatihan ini anda akan : \u003cbr\u003e 1. Membangun serta memperluas jaringan bisnis lewat instagram \u003cbr\u003e 2. Membangun akun bisnis di instagram \u003cbr\u003e 3. Memaksimalkan akun Instagram baik untuk berjualan, komunitas, maupun personal branding \u003cbr\u003e 4. Memahami cara membuat content Instagram yang menarik dan bermanfaat bagi calon customer \u003cbr\u003e 5. Mengetahui cara untuk beriklan dan menjangkau calon customer lewat Instagram \u003cbr\u003e 6. Meningkatkan omzet bisnis / toko online dengan instagram\u003cbr\u003e\u003cbr\u003e Cocok bagi siapapun yang tertarik untuk :  \u003cbr\u003e 1. Membangun toko bisnis / toko online di Instagram \u003cbr\u003e 2. Ingin berkarir sebagai social media specialist / content creator dalam suatu perusahaan \u003cbr\u003e 3. Ingin menjadi content creator freelance dan mendapatkan penghasilan tambahan \u003cbr\u003e\u003cbr\u003eBanyak orang sudah mendapatkan penghasilan lewat toko online. Bahkan penghasilannya lewat toko online, sudah melebihi penghasilan saat bekerja di perusahaan. Mau seperti mereka? Kapan giliran anda?? \u003cbr\u003eBangun bisnis anda SEKARANG dan dapatkan penghasilan puluhan juta rupiah per bulan dengan strategi digital marketing yang tepat!\u003cbr\u003e\u003cb\u003eBELAJAR DARI DASAR. 1x BAYAR DIJAMIN BELAJAR SAMPAI BISA.\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eMateri Pelatihan\u003c/b\u003e\u003cbr\u003e 1.Peran sosial media dalam bisnis \u003cbr\u003e 2. Memahami powerfull-nya Instagram bagi sebuah bisnis \u003c br\u003e 3. Teknik Fotografi, Foto Editor \u0026 Penulis Content di social media \u003cbr\u003e 4. Membuat content planning yang sesuai dengan calon customer  \u003cbr\u003e 5. Cara cepat dan praktis membuat konten \u003cbr\u003e 6. Tips \u0026 Trick membalas komentar dan membangun engagement di instagram \u003cbr\u003e 7. Membuat akun bisnis di Instagram \u003cbr\u003e 8. Rahasia membuat iklan produk lewat Facebook dan Instagram yang menarik bagi calon pembeli hanya dalam waktu singkat \u003cbr\u003e 9. Strategi menghasilkan omzet puluhan juta rupiah dengan budget iklan yang minim\u003cbr\u003e\u003cbr\u003e Yuk bergabung di kelas ini! Catat ya…. program ini didukung oleh Course-Net yang merupakan #1 Practical IT Coaching yang memenangkan penghargaan internasional dalam 2 tahun berturut-turut (ECC Global Award Atlanta USA 2019 \u0026 The Most Impactful IT Coaching 2020). Jadi, jangan lewatkan!\u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut: http://bit.ly/KelasCourseNet \u003cbr\u003e 3.Lakukan redeem voucher menggunakan kode voucher yang tadi muncul ke COURSE NET INDONESIA dengan masukan data diri lengkap di https://newvideo.course-net.com/web/index.php?r=redeem\u003cbr\u003e 4. Setelah berhasil redeem voucher, langkah selanjutnya untuk memulai kelas dapat mengakses https://newvideo.course-net.com/web \u003cbr\u003e5.Sertifikat dapat kamu lihat setelah selesai melaksanakan pelatihan bersama Tim Course-Net \u003cbr\u003e 6. Kamu wajib mengisi ulasan serta rating apabila kamu sudah menyelesaikan kelas ini.\u003cbr\u003e\u003cbr\u003e Apabila ada pertanyaan lebih lanjut kamu dapat menghubungi: \u003cbr\u003eCS Admin Course-Net: 0821-1707-0291\u003cbr\u003eJam Kerja: Senin sd Jumat (09:00 sd 17:00 WIB) Sabtu (09:00 sd 14:00 WIB)","courseName":"Cara Dapat Income Puluhan Juta Rupiah Hanya Lewat Instagram","courseSerial":"PROG-I8RJJK02","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/358x225-Video-Cara_Dapat_Income_Puluhan_Juta_Rupiah_Hanya_Lewat_Instagram.jpg","instructors":[{"description":"Course-Net Indonesia didirikan oleh seorang anak muda milenial pada tahum 2015. Berbekal prestasi cumlude semasa kuliah, juara kompetisi networking tingkat nasional dan berhasil masuk ke perusahaan ICT Consultant no 1 di Indonesia sebelum lulus kuliah, ia adalah Alvin. Alvin menyadari pentingnya seorang IT people untuk memiliki specific skill. Selain itu, penting bagi setiap IT people untuk punya seorang coach yang berpengalaman agar mampu beradaptasi dan berkontribusi secara maksimal dalam perusahaan. Oleh karena itu Alvin memiliki ide gila untuk mengumpulkan seluruh praktisi terbaik dengan background 3P (Praktisi, Punya Sertifikasi, Pretasi Tingkat Dunia). Tagline IT is FUN merupakan ciri khas dari Course-Net Indonesia dibuat semi-cowboy, FUN dan Praktis sehingga setiap IT people yang belajar mampu menyerap ilmu yang sifatnya best practice di dunia pekerjaan, bukan hanya teori saja. Hingga saat ini Course-Net telah menghasilkan 7000++lulusan dan mendapatkan penghargaan sebagai #1 Practical IT Coaching di ECC Global Award Atlanta USA.","jobTitle":"Lembaga Kursus Programming","name":"Course-Net","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Course-Net_Logo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA BARAT"],"marketType":"OFFLINE","merchantSerial":"MERC-JU7H1D49","price":200000,"rating":0,"slug":"cara-dapat-income-puluhan-juta-rupiah-hanya-lewat-instagram","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"}],"page":4,"pageSize":2,"recommendationID":"v0","searchAlgoID":"v3","totalCourse":17,"totalPage":9},"status":"success","message":"success"} 
  </msg>
-<msg timestamp="20211003 19:45:16.362" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:15.956" endtime="20211003 19:45:16.362"/>
+<msg timestamp="20211003 20:33:08.398" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211003 20:33:07.961" endtime="20211003 20:33:08.398"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:16.362" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.362"/>
+<msg timestamp="20211003 20:33:08.398" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20211003 20:33:08.398" endtime="20211003 20:33:08.398"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.362"/>
+<status status="PASS" starttime="20211003 20:33:08.398" endtime="20211003 20:33:08.398"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:16.362" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan ...</msg>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.362"/>
+<msg timestamp="20211003 20:33:08.398" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan ...</msg>
+<status status="PASS" starttime="20211003 20:33:08.398" endtime="20211003 20:33:08.398"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${body}</arg>
 <arg>${serachitem}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.362"/>
+<status status="PASS" starttime="20211003 20:33:08.398" endtime="20211003 20:33:08.398"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20211003 19:45:16.362" level="INFO">${contentTypeValue} = application/json</msg>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.362"/>
+<msg timestamp="20211003 20:33:08.398" level="INFO">${contentTypeValue} = application/json</msg>
+<status status="PASS" starttime="20211003 20:33:08.398" endtime="20211003 20:33:08.398"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.362"/>
+<status status="PASS" starttime="20211003 20:33:08.398" endtime="20211003 20:33:08.414"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${json}</var>
 <arg>${response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211003 19:45:16.378" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. &lt;br&gt; Pada program ini, peserta akan belajar cara memanfaatkan You...</msg>
-<status status="PASS" starttime="20211003 19:45:16.362" endtime="20211003 19:45:16.378"/>
+<msg timestamp="20211003 20:33:08.414" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. &lt;br&gt; Pada program ini, peserta akan belajar cara memanfaatkan You...</msg>
+<status status="PASS" starttime="20211003 20:33:08.414" endtime="20211003 20:33:08.414"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['page']}</arg>
 <arg>${page}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:16.378" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:08.414" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:16.378" endtime="20211003 19:45:16.378"/>
+<status status="PASS" starttime="20211003 20:33:08.414" endtime="20211003 20:33:08.414"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['pageSize']}</arg>
 <arg>${pageSize}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:16.378" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:08.414" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:16.378" endtime="20211003 19:45:16.378"/>
+<status status="PASS" starttime="20211003 20:33:08.414" endtime="20211003 20:33:08.414"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['status']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:16.378" endtime="20211003 19:45:16.378"/>
+<status status="PASS" starttime="20211003 20:33:08.414" endtime="20211003 20:33:08.414"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['message']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:16.378" endtime="20211003 19:45:16.378"/>
+<status status="PASS" starttime="20211003 20:33:08.414" endtime="20211003 20:33:08.414"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${price}</var>
 <arg>${json['data']['data'][0]['price']}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:16.393" level="INFO">${price} = 250000.0</msg>
-<status status="PASS" starttime="20211003 19:45:16.378" endtime="20211003 19:45:16.393"/>
+<msg timestamp="20211003 20:33:08.429" level="INFO">${price} = 250000.0</msg>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.429"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${min}</var>
 <arg>${minPrice}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:16.393" level="INFO">${min} = 200000.0</msg>
-<status status="PASS" starttime="20211003 19:45:16.393" endtime="20211003 19:45:16.393"/>
+<msg timestamp="20211003 20:33:08.429" level="INFO">${min} = 200000.0</msg>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.429"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${max}</var>
 <arg>${maxPrice}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:16.393" level="INFO">${max} = 300000.0</msg>
-<status status="PASS" starttime="20211003 19:45:16.393" endtime="20211003 19:45:16.393"/>
+<msg timestamp="20211003 20:33:08.429" level="INFO">${max} = 300000.0</msg>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.429"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${price}&gt;${min} and ${price}&lt;${maxPrice}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20211003 19:45:16.393" endtime="20211003 19:45:16.393"/>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.429"/>
 </kw>
-<status status="PASS" starttime="20211003 19:45:15.956" endtime="20211003 19:45:16.393"/>
+<status status="PASS" starttime="20211003 20:33:07.961" endtime="20211003 20:33:08.429"/>
 </kw>
 <kw name="Check Duration Search" library="TestSearch">
 <kw name="Create Session" library="RequestsLibrary">
@@ -315,8 +315,8 @@ given `alias`</doc>
 <arg>https://skillacademy.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20211003 19:45:16.393" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20211003 19:45:16.393" endtime="20211003 19:45:16.393"/>
+<msg timestamp="20211003 20:33:08.429" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.429"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -324,122 +324,122 @@ given `alias`</doc>
 <arg>/skillacademy/discovery/search?searchQuery=${serachitem}&amp;page=${page}&amp;pageSize=${pageSize}&amp;minPrice=${minPrice}&amp;maxPrice=${maxPrice}&amp;minDuration=${minDuration}&amp;maxDuration=${maxDuration}</arg>
 <doc>Send a GET request on the session object found using the
 given `alias`</doc>
-<msg timestamp="20211003 19:45:16.800" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1 
+<msg timestamp="20211003 20:33:08.617" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1 
  path_url=/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1 
  headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20211003 19:45:16.800" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1 
+<msg timestamp="20211003 20:33:08.617" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1 
  status=200, reason=OK 
  body={"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan YouTube marketing untuk memasarkan dan mengiklankan usaha produk. Hanya dengan menggunakan handphone, pelaku usaha dapat mengetahui cara meningkatkan jangkauan iklan produknya dengan mengenali strategi-strategi marketing yang tepat melalui YouTube. \n\u003cbr\u003e \u003cbr\u003e\n\u003cb\u003e PERHATIAN \u003c/b\u003e\n\u003cbr\u003e\n1. Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun \u003cbr\u003e\n2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan \u003cbr\u003e\n3. Program pelatihan yang dibeli menggunakan Kartu Prakerja tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat \u003cbr\u003e\n4. Khusus untuk pengguna Kartu Prakerja, pastikan nama, alamat email, dan nomor HP yang terdaftar di Skill Academy sesuai dengan data Prakerjamu","courseName":"Video Pelatihan: Mencari Peluang Bisnis Jualan Lewat HP Menggunakan YouTube Marketing","courseSerial":"PROG-4IF38HH5","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod-image.skillacademy.com/offline-marketplace/Background+Papindo.jpg","instructors":[{"description":"Papindo Education Center merupakan lembaga keterampilan yang bergerak di bidang IT, yang menyediakan kursus keterampilan komputer perkantoran, design grafis, dan teknisi komputer.","jobTitle":"Pelatihan Teknologi","name":"Papindo Education Center","profilePicture":"https://skillacademy-prod-image.skillacademy.com/offline-marketplace/Icon+Papindo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-OX2N4LCX","price":250000,"rating":0,"slug":"webinar-mencari-peluang-bisnis-jualan-lewat-hp-menggunakan-youtube-marketing","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":200000,"categories":[],"courseDescription":"Hii learners, mau sukses bisnis online dan mendapatkan omzet jutaan rupiah hanya dengan HP anda?Facebook dan instagram merupakan salah satu platform advertising terbesar di dunia saat ini selain GOOGLE.\u003cbr\u003eNah di kelas ini kita akan membahas bagaimana memaksimalkan facebook dan instagram untuk menjangkau customer lebih banyak lagi sehingga menghasilkan omzet yang luar biasa besar bagi bisnis anda. Sekarang saatnya untuk anda memulai bisnis dari Instagram.\u003cbr\u003e\u003cbr\u003e Setelah mengikuti pelatihan ini anda akan : \u003cbr\u003e 1. Membangun serta memperluas jaringan bisnis lewat instagram \u003cbr\u003e 2. Membangun akun bisnis di instagram \u003cbr\u003e 3. Memaksimalkan akun Instagram baik untuk berjualan, komunitas, maupun personal branding \u003cbr\u003e 4. Memahami cara membuat content Instagram yang menarik dan bermanfaat bagi calon customer \u003cbr\u003e 5. Mengetahui cara untuk beriklan dan menjangkau calon customer lewat Instagram \u003cbr\u003e 6. Meningkatkan omzet bisnis / toko online dengan instagram\u003cbr\u003e\u003cbr\u003e Cocok bagi siapapun yang tertarik untuk :  \u003cbr\u003e 1. Membangun toko bisnis / toko online di Instagram \u003cbr\u003e 2. Ingin berkarir sebagai social media specialist / content creator dalam suatu perusahaan \u003cbr\u003e 3. Ingin menjadi content creator freelance dan mendapatkan penghasilan tambahan \u003cbr\u003e\u003cbr\u003eBanyak orang sudah mendapatkan penghasilan lewat toko online. Bahkan penghasilannya lewat toko online, sudah melebihi penghasilan saat bekerja di perusahaan. Mau seperti mereka? Kapan giliran anda?? \u003cbr\u003eBangun bisnis anda SEKARANG dan dapatkan penghasilan puluhan juta rupiah per bulan dengan strategi digital marketing yang tepat!\u003cbr\u003e\u003cb\u003eBELAJAR DARI DASAR. 1x BAYAR DIJAMIN BELAJAR SAMPAI BISA.\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eMateri Pelatihan\u003c/b\u003e\u003cbr\u003e 1.Peran sosial media dalam bisnis \u003cbr\u003e 2. Memahami powerfull-nya Instagram bagi sebuah bisnis \u003c br\u003e 3. Teknik Fotografi, Foto Editor \u0026 Penulis Content di social media \u003cbr\u003e 4. Membuat content planning yang sesuai dengan calon customer  \u003cbr\u003e 5. Cara cepat dan praktis membuat konten \u003cbr\u003e 6. Tips \u0026 Trick membalas komentar dan membangun engagement di instagram \u003cbr\u003e 7. Membuat akun bisnis di Instagram \u003cbr\u003e 8. Rahasia membuat iklan produk lewat Facebook dan Instagram yang menarik bagi calon pembeli hanya dalam waktu singkat \u003cbr\u003e 9. Strategi menghasilkan omzet puluhan juta rupiah dengan budget iklan yang minim\u003cbr\u003e\u003cbr\u003e Yuk bergabung di kelas ini! Catat ya…. program ini didukung oleh Course-Net yang merupakan #1 Practical IT Coaching yang memenangkan penghargaan internasional dalam 2 tahun berturut-turut (ECC Global Award Atlanta USA 2019 \u0026 The Most Impactful IT Coaching 2020). Jadi, jangan lewatkan!\u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut: http://bit.ly/KelasCourseNet \u003cbr\u003e 3.Lakukan redeem voucher menggunakan kode voucher yang tadi muncul ke COURSE NET INDONESIA dengan masukan data diri lengkap di https://newvideo.course-net.com/web/index.php?r=redeem\u003cbr\u003e 4. Setelah berhasil redeem voucher, langkah selanjutnya untuk memulai kelas dapat mengakses https://newvideo.course-net.com/web \u003cbr\u003e5.Sertifikat dapat kamu lihat setelah selesai melaksanakan pelatihan bersama Tim Course-Net \u003cbr\u003e 6. Kamu wajib mengisi ulasan serta rating apabila kamu sudah menyelesaikan kelas ini.\u003cbr\u003e\u003cbr\u003e Apabila ada pertanyaan lebih lanjut kamu dapat menghubungi: \u003cbr\u003eCS Admin Course-Net: 0821-1707-0291\u003cbr\u003eJam Kerja: Senin sd Jumat (09:00 sd 17:00 WIB) Sabtu (09:00 sd 14:00 WIB)","courseName":"Cara Dapat Income Puluhan Juta Rupiah Hanya Lewat Instagram","courseSerial":"PROG-I8RJJK02","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/358x225-Video-Cara_Dapat_Income_Puluhan_Juta_Rupiah_Hanya_Lewat_Instagram.jpg","instructors":[{"description":"Course-Net Indonesia didirikan oleh seorang anak muda milenial pada tahum 2015. Berbekal prestasi cumlude semasa kuliah, juara kompetisi networking tingkat nasional dan berhasil masuk ke perusahaan ICT Consultant no 1 di Indonesia sebelum lulus kuliah, ia adalah Alvin. Alvin menyadari pentingnya seorang IT people untuk memiliki specific skill. Selain itu, penting bagi setiap IT people untuk punya seorang coach yang berpengalaman agar mampu beradaptasi dan berkontribusi secara maksimal dalam perusahaan. Oleh karena itu Alvin memiliki ide gila untuk mengumpulkan seluruh praktisi terbaik dengan background 3P (Praktisi, Punya Sertifikasi, Pretasi Tingkat Dunia). Tagline IT is FUN merupakan ciri khas dari Course-Net Indonesia dibuat semi-cowboy, FUN dan Praktis sehingga setiap IT people yang belajar mampu menyerap ilmu yang sifatnya best practice di dunia pekerjaan, bukan hanya teori saja. Hingga saat ini Course-Net telah menghasilkan 7000++lulusan dan mendapatkan penghargaan sebagai #1 Practical IT Coaching di ECC Global Award Atlanta USA.","jobTitle":"Lembaga Kursus Programming","name":"Course-Net","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Course-Net_Logo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA BARAT"],"marketType":"OFFLINE","merchantSerial":"MERC-JU7H1D49","price":200000,"rating":0,"slug":"cara-dapat-income-puluhan-juta-rupiah-hanya-lewat-instagram","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"}],"page":4,"pageSize":2,"recommendationID":"v0","searchAlgoID":"v3","totalCourse":17,"totalPage":9},"status":"success","message":"success"} 
  </msg>
-<msg timestamp="20211003 19:45:16.800" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:16.393" endtime="20211003 19:45:16.800"/>
+<msg timestamp="20211003 20:33:08.617" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.617"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:16.800" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.800"/>
+<msg timestamp="20211003 20:33:08.617" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20211003 20:33:08.617" endtime="20211003 20:33:08.617"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.800"/>
+<status status="PASS" starttime="20211003 20:33:08.617" endtime="20211003 20:33:08.617"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:16.800" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan ...</msg>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.800"/>
+<msg timestamp="20211003 20:33:08.617" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan ...</msg>
+<status status="PASS" starttime="20211003 20:33:08.617" endtime="20211003 20:33:08.617"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${body}</arg>
 <arg>${serachitem}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.800"/>
+<status status="PASS" starttime="20211003 20:33:08.617" endtime="20211003 20:33:08.617"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20211003 19:45:16.800" level="INFO">${contentTypeValue} = application/json</msg>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.800"/>
+<msg timestamp="20211003 20:33:08.632" level="INFO">${contentTypeValue} = application/json</msg>
+<status status="PASS" starttime="20211003 20:33:08.617" endtime="20211003 20:33:08.632"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.800"/>
+<status status="PASS" starttime="20211003 20:33:08.632" endtime="20211003 20:33:08.632"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${json}</var>
 <arg>${response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211003 19:45:16.815" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. &lt;br&gt; Pada program ini, peserta akan belajar cara memanfaatkan You...</msg>
-<status status="PASS" starttime="20211003 19:45:16.800" endtime="20211003 19:45:16.815"/>
+<msg timestamp="20211003 20:33:08.632" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. &lt;br&gt; Pada program ini, peserta akan belajar cara memanfaatkan You...</msg>
+<status status="PASS" starttime="20211003 20:33:08.632" endtime="20211003 20:33:08.632"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['page']}</arg>
 <arg>${page}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:16.815" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:08.632" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:16.815" endtime="20211003 19:45:16.815"/>
+<status status="PASS" starttime="20211003 20:33:08.632" endtime="20211003 20:33:08.632"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['pageSize']}</arg>
 <arg>${pageSize}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:16.815" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:08.632" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:16.815" endtime="20211003 19:45:16.815"/>
+<status status="PASS" starttime="20211003 20:33:08.632" endtime="20211003 20:33:08.632"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['status']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:16.815" endtime="20211003 19:45:16.815"/>
+<status status="PASS" starttime="20211003 20:33:08.632" endtime="20211003 20:33:08.648"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['message']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:16.815" endtime="20211003 19:45:16.815"/>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:08.648"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${price}</var>
 <arg>${json['data']['data'][0]['price']}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:16.831" level="INFO">${price} = 250000.0</msg>
-<status status="PASS" starttime="20211003 19:45:16.815" endtime="20211003 19:45:16.831"/>
+<msg timestamp="20211003 20:33:08.648" level="INFO">${price} = 250000.0</msg>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:08.648"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${min}</var>
 <arg>${minPrice}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:16.831" level="INFO">${min} = 200000.0</msg>
-<status status="PASS" starttime="20211003 19:45:16.831" endtime="20211003 19:45:16.831"/>
+<msg timestamp="20211003 20:33:08.648" level="INFO">${min} = 200000.0</msg>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:08.648"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${max}</var>
 <arg>${maxPrice}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:16.831" level="INFO">${max} = 300000.0</msg>
-<status status="PASS" starttime="20211003 19:45:16.831" endtime="20211003 19:45:16.831"/>
+<msg timestamp="20211003 20:33:08.648" level="INFO">${max} = 300000.0</msg>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:08.648"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${price}&gt;${min} and ${price}&lt;${maxPrice}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20211003 19:45:16.831" endtime="20211003 19:45:16.831"/>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:08.648"/>
 </kw>
-<status status="PASS" starttime="20211003 19:45:16.393" endtime="20211003 19:45:16.831"/>
+<status status="PASS" starttime="20211003 20:33:08.429" endtime="20211003 20:33:08.648"/>
 </kw>
 <kw name="Check Order Search" library="TestSearch">
 <kw name="Create Session" library="RequestsLibrary">
@@ -447,8 +447,8 @@ given `alias`</doc>
 <arg>https://skillacademy.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20211003 19:45:16.831" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20211003 19:45:16.831" endtime="20211003 19:45:16.831"/>
+<msg timestamp="20211003 20:33:08.648" level="INFO">Creating Session using : alias=mysession, url=https://skillacademy.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:08.664"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${response}</var>
@@ -456,126 +456,126 @@ given `alias`</doc>
 <arg>/skillacademy/discovery/search?searchQuery=${serachitem}&amp;page=${page}&amp;pageSize=${pageSize}&amp;minPrice=${minPrice}&amp;maxPrice=${maxPrice}&amp;minDuration=${minDuration}&amp;maxDuration=${maxDuration}&amp;sortBy=${order}&amp;orderBy=${order}</arg>
 <doc>Send a GET request on the session object found using the
 given `alias`</doc>
-<msg timestamp="20211003 19:45:17.096" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1&amp;sortBy=price&amp;orderBy=price 
+<msg timestamp="20211003 20:33:09.023" level="INFO">GET Request : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1&amp;sortBy=price&amp;orderBy=price 
  path_url=/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1&amp;sortBy=price&amp;orderBy=price 
  headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20211003 19:45:17.096" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1&amp;sortBy=price&amp;orderBy=price 
+<msg timestamp="20211003 20:33:09.023" level="INFO">GET Response : url=https://skillacademy.com/skillacademy/discovery/search?searchQuery=bisnis&amp;page=4&amp;pageSize=2&amp;minPrice=200000&amp;maxPrice=300000&amp;minDuration=0&amp;maxDuration=1&amp;sortBy=price&amp;orderBy=price 
  status=200, reason=OK 
  body={"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan YouTube marketing untuk memasarkan dan mengiklankan usaha produk. Hanya dengan menggunakan handphone, pelaku usaha dapat mengetahui cara meningkatkan jangkauan iklan produknya dengan mengenali strategi-strategi marketing yang tepat melalui YouTube. \n\u003cbr\u003e \u003cbr\u003e\n\u003cb\u003e PERHATIAN \u003c/b\u003e\n\u003cbr\u003e\n1. Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun \u003cbr\u003e\n2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan \u003cbr\u003e\n3. Program pelatihan yang dibeli menggunakan Kartu Prakerja tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat \u003cbr\u003e\n4. Khusus untuk pengguna Kartu Prakerja, pastikan nama, alamat email, dan nomor HP yang terdaftar di Skill Academy sesuai dengan data Prakerjamu","courseName":"Video Pelatihan: Mencari Peluang Bisnis Jualan Lewat HP Menggunakan YouTube Marketing","courseSerial":"PROG-4IF38HH5","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod-image.skillacademy.com/offline-marketplace/Background+Papindo.jpg","instructors":[{"description":"Papindo Education Center merupakan lembaga keterampilan yang bergerak di bidang IT, yang menyediakan kursus keterampilan komputer perkantoran, design grafis, dan teknisi komputer.","jobTitle":"Pelatihan Teknologi","name":"Papindo Education Center","profilePicture":"https://skillacademy-prod-image.skillacademy.com/offline-marketplace/Icon+Papindo.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-OX2N4LCX","price":250000,"rating":0,"slug":"webinar-mencari-peluang-bisnis-jualan-lewat-hp-menggunakan-youtube-marketing","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"},{"basePrice":249000,"categories":[],"courseDescription":"Jadwal: Hari Selasa, Rabu, Kamis, Jumat, Sabtu dan Minggu\u003cbr\u003ePukul: 19.30-21.00 WIB\u003cbr\u003ePlatform : Zoom \u003cbr\u003e Didalam kelas ini, anda akan mendaptkan materi seputar: \u003cbr\u003e 1.Bagaimana Memilih produk yang potensial untuk oleh-oleh.\u003cbr\u003e2.Bagaimana menentukan kemasan yang tepat agar meningkatkan harga jual hingga 3x lipat.\u003cbr\u003e3. Strategi branding simple, tanpa modal, dan sangat efektif. \u003cbr\u003e\u003cbr\u003e Yuk bergabung di kelas ini! Catat ya…. program ini didukung oleh Wonderful Packaging Class. Jadi, jangan lewatkan! \u003cbr\u003e\u003cbr\u003e\u003cb\u003ePERHATIAN\u003c/b\u003e\u003cbr\u003e1.Jika terjadi kesalahan dalam pembelian, pihak Skill Academy tidak melayani pengembalian dana (refund) dengan alasan apapun\u003cbr\u003e2. Sebelum membeli, harap baca deskripsi program dengan saksama, khususnya jadwal pelatihan\u003cbr\u003e3. Program pelatihan yang dibeli tidak dapat dipindahtangankan. Jika terjadi hal tersebut, pihak penyelenggara pelatihan berhak untuk tidak memberikan sertifikat\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCara Redeem Voucher:\u003c/b\u003e\u003cbr\u003e1. Setelah selesai melakukan pembelian, kunjungi halaman \"Kelas Saya\" untuk melihat kode voucher Kamu, \u003cbr\u003e 2. Isi data diri kamu pada form berikut: https://bit.ly/KelasWPC  \u003cbr\u003e 3.Tim Wonderful Packaging Class akan menghubungi Anda untuk pelaksanaan kelas","courseName":"Webinar: Teknik Sukses Bisnis Oleh-Oleh","courseSerial":"PROG-IWZAH6P9","createdAt":"0001-01-01 00:00:00 +0000 UTC","imageUrl":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Background_Bisnis_Oleh-Oleh.jpg","instructors":[{"description":"Kelas bisnis yang mengajarkan bagaimana cara memulai usaha dengan modal minim dengan hasil maksimal. Bahan Materi Menentukan Produk, Kemasan hingga Pemasaran.","jobTitle":"Praktisi dan Konsultan","name":"Wonderful Packaging Class","profilePicture":"https://skillacademy-prod.s3.ap-southeast-1.amazonaws.com/offline-marketplace/Icon_WPC.png"}],"introductionVideoThumbnailURL":"","introductionVideoURL":"","isSubscribed":false,"location":["KOTA JAKARTA PUSAT"],"marketType":"OFFLINE","merchantSerial":"MERC-GBYQCZMF","price":249000,"rating":0,"slug":"webinar-teknik-sukses-bisnis-oleholeh","tags":[],"totalRating":0,"transactional":"TRANSACTIONABLE_YES","updatedAt":"0001-01-01 00:00:00 +0000 UTC"}],"page":4,"pageSize":2,"recommendationID":"v0","searchAlgoID":"v3","totalCourse":17,"totalPage":9},"status":"success","message":"success"} 
  </msg>
-<msg timestamp="20211003 19:45:17.096" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:16.831" endtime="20211003 19:45:17.096"/>
+<msg timestamp="20211003 20:33:09.023" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211003 20:33:08.664" endtime="20211003 20:33:09.023"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:17.096" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.096"/>
+<msg timestamp="20211003 20:33:09.023" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20211003 20:33:09.023" endtime="20211003 20:33:09.023"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.096"/>
+<status status="PASS" starttime="20211003 20:33:09.023" endtime="20211003 20:33:09.023"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20211003 19:45:17.096" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan ...</msg>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.096"/>
+<msg timestamp="20211003 20:33:09.023" level="INFO">${body} = {"data":{"data":[{"basePrice":250000,"categories":[],"courseDescription":"Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. \u003cbr\u003e Pada program ini, peserta akan belajar cara memanfaatkan ...</msg>
+<status status="PASS" starttime="20211003 20:33:09.023" endtime="20211003 20:33:09.023"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${body}</arg>
 <arg>${serachitem}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.096"/>
+<status status="PASS" starttime="20211003 20:33:09.023" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${contentTypeValue}</var>
 <arg>${response.headers}</arg>
 <arg>Content-Type</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20211003 19:45:17.096" level="INFO">${contentTypeValue} = application/json</msg>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.096"/>
+<msg timestamp="20211003 20:33:09.039" level="INFO">${contentTypeValue} = application/json</msg>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${contentTypeValue}</arg>
 <arg>application/json</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.096"/>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${json}</var>
 <arg>${response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211003 19:45:17.112" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. &lt;br&gt; Pada program ini, peserta akan belajar cara memanfaatkan You...</msg>
-<status status="PASS" starttime="20211003 19:45:17.096" endtime="20211003 19:45:17.112"/>
+<msg timestamp="20211003 20:33:09.039" level="INFO">${json} = {'data': {'data': [{'basePrice': 250000, 'categories': [], 'courseDescription': 'Jadwal kelas: Setiap hari Rabu pukul 15.00-17.00 WIB. &lt;br&gt; Pada program ini, peserta akan belajar cara memanfaatkan You...</msg>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['page']}</arg>
 <arg>${page}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:17.112" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:09.039" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.112"/>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['data']['pageSize']}</arg>
 <arg>${pageSize}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20211003 19:45:17.112" level="INFO">Argument types are:
+<msg timestamp="20211003 20:33:09.039" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.112"/>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['status']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.112"/>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${json['message']}</arg>
 <arg>${success}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.112"/>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${price}</var>
 <arg>${json['data']['data'][0]['price']}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:17.112" level="INFO">${price} = 250000.0</msg>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.112"/>
+<msg timestamp="20211003 20:33:09.039" level="INFO">${price} = 250000.0</msg>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${min}</var>
 <arg>${minPrice}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:17.112" level="INFO">${min} = 200000.0</msg>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.112"/>
+<msg timestamp="20211003 20:33:09.039" level="INFO">${min} = 200000.0</msg>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${max}</var>
 <arg>${maxPrice}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20211003 19:45:17.128" level="INFO">${max} = 300000.0</msg>
-<status status="PASS" starttime="20211003 19:45:17.112" endtime="20211003 19:45:17.128"/>
+<msg timestamp="20211003 20:33:09.039" level="INFO">${max} = 300000.0</msg>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.039"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${price}&gt;${min} and ${price}&lt;${maxPrice}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20211003 19:45:17.128" endtime="20211003 19:45:17.128"/>
+<status status="PASS" starttime="20211003 20:33:09.039" endtime="20211003 20:33:09.054"/>
 </kw>
-<status status="PASS" starttime="20211003 19:45:16.831" endtime="20211003 19:45:17.128"/>
+<status status="PASS" starttime="20211003 20:33:08.648" endtime="20211003 20:33:09.054"/>
 </kw>
-<status status="PASS" starttime="20211003 19:45:15.159" endtime="20211003 19:45:17.128"/>
+<status status="PASS" starttime="20211003 20:33:06.929" endtime="20211003 20:33:09.054"/>
 </test>
-<status status="PASS" starttime="20211003 19:45:14.189" endtime="20211003 19:45:17.128"/>
+<status status="PASS" starttime="20211003 20:33:06.117" endtime="20211003 20:33:09.117"/>
 </suite>
 <statistics>
 <total>
