@@ -34,6 +34,8 @@ Develop Web and API automation of Search feature Skillacademy web.
 
 * Clone under a Directory
 * Open the Directory as a project in IDE
+* Run robot Tests/API/SkillAcademySearch.robot for API test Automation
+* Run robot -d Results/WEB Tests/WEB/SkillAcademy.robot for WEB test Automation
 
 ## Help
 
